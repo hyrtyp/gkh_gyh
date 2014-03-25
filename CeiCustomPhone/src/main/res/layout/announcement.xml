@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/welcome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <LinearLayout
+        android:id="@id/bottoms_Ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="0dip"
+        >
+        <fragment
+            android:id="@+id/report_bottom_menu"
+            android:name="com.hyrt.readreport.CeiReportBottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/tzgg_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottoms_Ll"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/zjzx_line"
+        android:dividerHeight="1.0dip" />
+
+</RelativeLayout>

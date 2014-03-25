@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CeiCustom/CeiCustom.iml" filepath="$PROJECT_DIR$/CeiCustom/CeiCustom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CeiCustomPhone/CeiCustomPhone.iml" filepath="$PROJECT_DIR$/CeiCustomPhone/CeiCustomPhone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CeiStyle/CeiStyle.iml" filepath="$PROJECT_DIR$/CeiStyle/CeiStyle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guokaihang_release.iml" filepath="$PROJECT_DIR$/guokaihang_release.iml" />
+    </modules>
+  </component>
+</project>
+

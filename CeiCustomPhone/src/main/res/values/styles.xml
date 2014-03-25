@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="yangshi_1">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">#ff054b93</item>
+        <item name="android:maxWidth">235.0px</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="yangshi_2">
+        <item name="android:textSize">18.0px</item>
+        <item name="android:textColor">#ff3d3d3f</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">20</item>
+    </style>
+    <style name="yangshi_3">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">4</item>
+    </style>
+    <style name="yangshi_4">
+        <item name="android:textSize">24.0px</item>
+    </style>
+    <style name="yangshi_5">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">8</item>
+    </style>
+    <style name="yangshi_pad_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="yangshi_phone_title_big">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="yangshi_phone_title_small">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="yangshi_phone_bottom_menu">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="action_bar_title_text">
+        <item name="android:textSize">24px</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Light" />
+
+    <!--点的样式-->
+    <style name="imageview_point">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_small</item>
+        <item name="android:src">@drawable/home_img_ratio</item>
+    </style>
+
+    <!--更多条目样式-->
+    <style name="more_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/touchview_height_small</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/transparent_black</item>
+        <item name="android:text">更多...</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!--报告图片样式-->
+    <style name="bg_iv">
+        <item name="android:layout_width">@dimen/bgdefual_item_width</item>
+        <item name="android:layout_height">@dimen/bgdefual_item_height</item>
+        <item name="android:background">@drawable/read_report_report1</item>
+    </style>
+
+    <!--报告图片底图样式-->
+    <style name="bg_iv_bottom">
+        <item name="android:layout_width">@dimen/bgiv_item_width</item>
+        <item name="android:layout_height">@dimen/bgiv_item_height</item>
+        <item name="android:background">@drawable/read_report_book_bg</item>
+    </style>
+
+    <!--报告图片下方标题样式-->
+    <style name="bg_tv_bottom">
+        <item name="android:layout_width">@dimen/bgiv_item_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:lines">2</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!--搜索按钮-->
+    <style name="search_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_small</item>
+        <item name="android:background">@drawable/read_report_find_findimg</item>
+    </style>
+
+    <!--搜索文本框-->
+    <style name="search_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/view_margin_small</item>
+        <item name="android:background">@drawable/read_report_find_eidtext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:hint">输入搜索内容</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!--内容文本框-->
+    <style name="content_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/view_margin_large</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:maxWidth">280.0dp</item>
+        <item name="android:layout_marginTop">@dimen/view_margin</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!--报告列表-->
+    <style name="bg_lv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/view_margin_small</item>
+        <item name="android:paddingRight">@dimen/view_margin_small</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">#ffc8c8c8</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!--下载按钮-->
+    <style name="down_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/screenview_margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/screenview_margin_small</item>
+        <item name="android:background">@drawable/read_report_bookdownload_but</item>
+    </style>
+
+    <!--报告图片下方标题样式-->
+    <style name="title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff054b93</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <!--报告图片下方标题样式-->
+    <style name="secondtitle_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff585858</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!--选项卡问题样式-->
+    <style name="menu_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/view_margin_small</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:background">@drawable/phone_study_menu_select</item>
+    </style>
+
+    <!--按钮样式-->
+    <style name="button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/touchview_height_small</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_large</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!--小按钮样式-->
+    <style name="smallbutton_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/item_button_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Theme.Pap.TextAppearance.Small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+</resources>

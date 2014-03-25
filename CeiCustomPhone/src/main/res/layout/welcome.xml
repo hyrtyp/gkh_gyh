@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/welcome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcome_background" >
+
+    <ImageView
+        android:id="@id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/view_margin_small"
+        android:src="@drawable/guokaihang_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@id/welcome_img_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="@dimen/view_margin_smallest"
+            android:textColor="#ffffffff"
+            android:text="客户信息服务周刊" />
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待中......"
+            android:textColor="#ffffffff"
+             android:padding="@dimen/view_margin_smallest"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_margin_smallest"
+            android:layout_below="@id/welcome_img_min"
+            android:id="@+id/relativeLayout">
+            
+           
+
+            <ImageView
+                android:id="@id/welcome_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/welcome_loading_anim" />
+
+            <TextView
+                android:id="@id/welcome_text_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0%"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

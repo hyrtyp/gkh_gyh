@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/welcome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="@dimen/view_margin_smallest"
+    android:paddingRight="@dimen/view_margin_smallest">
+
+    <LinearLayout
+        android:id="@id/bottoms_Ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="0dip" >
+
+        <fragment
+            android:id="@+id/report_bottom_menu"
+            android:name="com.hyrt.readreport.CeiReportBottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/select"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/touchview_height"
+        android:layout_below="@id/top"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/view_margin_small"
+         >
+
+        <TextView
+            android:id="@id/abouts_us"
+            style="@style/menu_tv"
+            android:text="关于我们"/>
+
+        <TextView
+            android:id="@id/usesinfo"
+            style="@style/menu_tv"
+            android:background="@drawable/menu_transbg"
+            android:text="使用说明"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@id/mazminfo"
+            style="@style/menu_tv"
+            android:background="@drawable/menu_transbg"
+            android:text="免责声明"
+            android:textColor="#0000FF" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@id/disclaimer_web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottoms_Ll"
+        android:layout_below="@id/select"
+        android:background="#fff0f4f6" />
+
+</RelativeLayout>

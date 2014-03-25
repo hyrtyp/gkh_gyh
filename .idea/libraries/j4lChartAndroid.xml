@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="j4lChartAndroid">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CeiCustom/libs/j4lChartAndroid.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

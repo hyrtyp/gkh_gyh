@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guokaihang_back" >
+
+    <LinearLayout
+        android:id="@id/botton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <fragment android:name="com.hyrt.readreport.CeiReportBottomMenu"
+            android:id="@+id/report_bottom_menu"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/botton"
+        android:orientation="vertical"
+        android:weightSum="3.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0" >
+
+            <RelativeLayout
+                android:id="@id/read_report_midtop"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.hyrt.readreport.view.DetialGallery
+                    android:id="@id/read_report_main_ga"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/read_report_goodbg" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/screenview_margin_small"
+                        android:paddingTop="@dimen/view_margin_smallest" >
+
+                        <ImageView
+                            android:id="@id/read_report_point1"
+                            android:layout_marginLeft="0dp"
+                            style="@style/imageview_point"/>
+
+                        <ImageView
+                            android:id="@id/read_report_point2"
+                            style="@style/imageview_point"/>
+
+                        <ImageView
+                            android:id="@id/read_report_point3"
+                            style="@style/imageview_point"/>
+
+                        <ImageView
+                            android:id="@id/read_report_point4"
+                            style="@style/imageview_point"/>
+
+                        <ImageView
+                            android:id="@id/read_report_point5"
+                            style="@style/imageview_point"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@id/read_report_more"
+                style="@style/more_text" />
+
+            <GridView
+                android:id="@id/read_report_main_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/read_report_more"
+                android:layout_marginTop="@dimen/view_margin_smallest"
+                android:numColumns="3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

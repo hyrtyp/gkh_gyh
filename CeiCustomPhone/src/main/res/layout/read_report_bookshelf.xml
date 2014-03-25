@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/read_report_bookself_bg" >
+
+
+    <RelativeLayout
+        android:id="@id/mid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/read_report_findbg" >
+
+        <LinearLayout
+            android:id="@id/read_report_bookself_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/view_margin_small" >
+
+            <ImageView
+                android:id="@id/read_report_bookself_shu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_smallest"
+                android:background="@drawable/read_report_bookself_shu" />
+
+            <ImageView
+                android:id="@id/read_report_bookself_heng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/read_report_bookself_heng" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/read_report_bookself_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/read_report_bookself_right"
+            android:background="@drawable/read_report_book_find" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/read_report_bookself_find"
+            android:padding="@dimen/view_margin_small">
+
+            <EditText
+                android:id="@id/read_report_bookself_et"
+                style="@style/search_et"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/read_report_search"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mid" >
+
+        <com.hyrt.readreport.view.ShelvesView
+            android:id="@id/grid_shelves"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:gravity="center"
+            android:numColumns="3"
+            android:verticalSpacing="30dp"
+            android:paddingLeft="@dimen/screenview_margin_small"
+            android:paddingRight="@dimen/screenview_margin_small" />
+
+        <ListView
+            android:id="@id/yjbg_book_shelves"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/bg_lv"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/yjbg_bookself_pro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#90000000"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

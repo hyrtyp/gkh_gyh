@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/welcome"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guokaihang_back" >
+
+    <LinearLayout
+        android:id="@id/bottoms_Ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="0dip" >
+
+        <fragment
+            android:id="@+id/report_bottom_menu"
+            android:name="com.hyrt.readreport.CeiReportBottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/touchview_height"
+        android:layout_below="@id/top"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/view_margin_small" >
+
+        <TextView
+            android:id="@id/person_info"
+            style="@style/menu_tv"
+            android:gravity="center"
+            android:text="个人信息" />
+
+        <TextView
+            android:id="@id/change_password"
+            style="@style/menu_tv"
+            android:background="@drawable/menu_transbg"
+            android:text="修改密码"
+            android:textColor="#0000FF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/pc_re"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottoms_Ll"
+        android:layout_below="@id/linearLayout1" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/read_report_bottombg"
+        android:gravity="center_vertical"
+       >
+        <fragment android:name="com.hyrt.readreport.CeiReportBottomMenu"
+            android:id="@+id/report_bottom_menu"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/find_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/read_report_findbg"
+        android:gravity="center"
+        android:visibility="gone"
+         >
+
+        <EditText
+            android:id="@id/read_report_ettext"
+            style="@style/search_et"
+          />
+
+        <ImageView
+            android:id="@id/read_report_findreport"
+            style="@style/search_btn" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@id/read_report_fltable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_line"
+        android:background="@drawable/menu_scrollviewbg"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <com.hyrt.readreport.view.GGridView
+                android:id="@id/read_report_fl_gv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:listSelector="@drawable/nodrawable"
+                android:paddingTop="@dimen/view_margin_smallest" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@id/read_report_fltable1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_report_fltable"
+        android:background="@drawable/menu_scrollviewbg"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <com.hyrt.readreport.view.GGridView
+                android:id="@id/read_report_fl_gv2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:listSelector="@drawable/nodrawable"
+                android:paddingTop="@dimen/view_margin_smallest" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@id/read_report_more"
+        style="@style/more_text"
+        android:layout_above="@id/bottom"
+        android:layout_alignParentBottom="false"/>
+
+    <ListView
+        android:id="@id/read_report_data_lv"
+        android:layout_above="@id/read_report_more"
+        android:layout_below="@id/read_report_fltable1"
+        style="@style/bg_lv"/>
+
+</RelativeLayout>

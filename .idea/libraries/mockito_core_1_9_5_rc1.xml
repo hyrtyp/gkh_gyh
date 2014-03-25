@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="mockito-core-1.9.5-rc1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.5-rc1/6851a017254c0e29bc163c025663099f4dcf5e0f/mockito-core-1.9.5-rc1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.5-rc1/341b47a87e2b52238a4dfae6c0ff72ddb117e5f9/mockito-core-1.9.5-rc1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
