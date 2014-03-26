@@ -129,6 +129,14 @@ public class ReadReportFL extends ContainerActivity implements OnClickListener {
 					firstData.remove(0);
 				FlTableAdapter adapter = new FlTableAdapter(ReadReportFL.this,
 						firstData, 0);
+                ReportpaitElement[] reportpaitElements = new ReportpaitElement[secondData.size()];
+                for(int i=0;i<secondData.size();i++){
+                    reportpaitElements[compareNumStr.get(secondData.get(i).getOutlineTitle())-1] = secondData.get(i);
+                }
+                secondData.clear();
+                for(int y=0;y<reportpaitElements.length;y++){
+                    secondData.add(reportpaitElements[y]);
+                }
 				FlTableAdapter adapter1 = new FlTableAdapter(ReadReportFL.this,
 						secondData, 0);
 				flGridView1.setAdapter(adapter);
